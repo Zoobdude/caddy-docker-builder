@@ -51,3 +51,4 @@ runs:
       with:
         push: true
         tags: ${{ inputs.tags }}
+        context: .
