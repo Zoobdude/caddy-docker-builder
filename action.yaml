@@ -6,7 +6,7 @@ inputs:
   modules:
     description: |
       A list of links to caddy modules (typically GitHub repo links).
-      Must be comma seperated
+      Use the | to provide a seperate link on each line
     required: true
 
   docker-username:
