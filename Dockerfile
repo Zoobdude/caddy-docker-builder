@@ -1,8 +1,7 @@
 FROM caddy:builder AS builder
 
-RUN xcaddy build \
-    --with github.com/caddyserver/nginx-adapter \
-    --with github.com/hairyhenderson/caddy-teapot-module@v0.0.3-0
+ARG MODULES
+RUN $MODULES | xargs -n 1 -I {} echo --with {} | xargs xcaddy build
 
 #Proper versioning will be added later
 FROM caddy:latest

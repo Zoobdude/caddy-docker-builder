@@ -20,6 +20,10 @@ inputs:
   tags:
     description: "List of tags"
     required: true
+  
+  platforms:
+    description: "List of target platforms for build"
+    required: true
 
 runs:
   using: "composite"
@@ -52,3 +56,6 @@ runs:
         push: true
         tags: ${{ inputs.tags }}
         context: .
+        build-args: |
+          MODULES=${{ inputs.modules }}
+        platforms: ${{ inputs.platforms }}
