@@ -8,7 +8,7 @@ This GitHub Action provides an easy way to build a Caddy container yourself with
 
 ## Usage
 Here are the required/avalible inputs:
-https://github.com/Zoobdude/caddy-docker-builder/blob/d223a95fa0c7b643b9c7cc45f8bb34ed82e9d45a/action.yaml#L5-L26
+https://github.com/Zoobdude/caddy-docker-builder/blob/f4f45e62ad40f0998e187b7e26872005a7196d36/action.yaml#L5-L26
 
 Here is an example workflow file:
 ```
