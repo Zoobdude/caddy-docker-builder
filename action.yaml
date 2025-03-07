@@ -13,3 +13,5 @@ runs:
     - name: Output modules
       run: echo $INPUT_MODULES
       shell: bash
+      env:
+        INPUT_MODULES: ${{ inputs.modules }}
