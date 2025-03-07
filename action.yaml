@@ -57,5 +57,5 @@ runs:
         tags: ${{ inputs.tags }}
         context: .
         build-args: |
-          MODULES=${{ inputs.modules }}
+          MODULES="${{ inputs.modules }}"
         platforms: ${{ inputs.platforms }}

@@ -1,7 +1,7 @@
 FROM caddy:builder AS builder
 
 ARG MODULES
-RUN $MODULES | xargs -n 1 -I {} echo --with {} | xargs xcaddy build
+RUN echo $MODULES | xargs -n 1 -I {} echo --with {} | xargs xcaddy build
 
 #Proper versioning will be added later
 FROM caddy:latest
