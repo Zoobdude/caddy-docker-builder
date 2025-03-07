@@ -11,4 +11,5 @@ runs:
   using: "composite"
   steps: 
     - name: Output modules
-      run: echo $INPUT_MODULES 
+      run: echo $INPUT_MODULES
+      shell: bash
