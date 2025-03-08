@@ -1,7 +1,9 @@
 name: 'Custom Caddy Docker builder'
 description: 'Build a Caddy docker container'
 author: 'Luke Thomas'
-icon: box
+branding:
+  icon: 'box'
+  color: 'green'
 
 inputs:
   modules:
