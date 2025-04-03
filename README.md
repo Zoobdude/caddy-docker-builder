@@ -1,7 +1,7 @@
 # Caddy Docker Builder
 
 Caddy has [many modules available](https://caddyserver.com/docs/modules/) which can be used to extend the default functionality.
-Caddy offers an [official Docker continer](https://hub.docker.com/_/caddy) with a small set of default modules.
+Caddy offers an [official Docker container](https://hub.docker.com/_/caddy) with a small set of default modules.
 If you wish to add one of these modules, it must be set at build time and compiled using [xcaddy](https://github.com/caddyserver/xcaddy).
 
 This GitHub Action provides an easy way to build a Caddy container yourself with your own choice of modules which is then pushed to the Docker Hub.
