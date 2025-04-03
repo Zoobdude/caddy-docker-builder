@@ -28,6 +28,10 @@ inputs:
     description: "List of target platforms for build"
     required: true
 
+  dockerfile:
+    description: "Path to a custom Dockerfile"
+    required: false
+
 runs:
   using: "composite"
   steps: 
@@ -55,7 +59,7 @@ runs:
         push: true
         tags: ${{ inputs.tags }}
         context: .
-        file: ${{ github.action_path }}/Dockerfile
+        file: ${{ inputs.dockerfile || github.action_path + '/Dockerfile' }}
         build-args: |
           "MODULES=${{ inputs.modules }}"
         platforms: ${{ inputs.platforms }}
