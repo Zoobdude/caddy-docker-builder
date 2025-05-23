@@ -29,7 +29,7 @@ jobs:
             github.com/porech/caddy-maxmind-geolocation
           docker-username: "zoobdude"
           docker-password: ${{ secrets.DOCKERHUB_TOKEN }}
-          tags: "zoobdude/caddy"
+          image: "zoobdude/caddy"
           platforms: linux/amd64,linux/arm64,linux/arm/v7
 ```
 I have this triggering in [another repository](https://github.com/Zoobdude/caddy-builder-with-modules) to build my own container
