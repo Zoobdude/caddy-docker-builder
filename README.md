@@ -34,4 +34,3 @@ jobs:
 ```
 I have this triggering in [another repository](https://github.com/Zoobdude/caddy-builder-with-modules) to build my own container
 
-Note: You can specify a custom Dockerfile path using the `dockerfile` input parameter.
