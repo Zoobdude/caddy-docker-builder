@@ -52,8 +52,10 @@ runs:
     - name: Get Caddy base version
       id: get_base_version
       run: |
+        docker pull caddy:latest
         base_version=$(docker inspect --format '{{ index .Config.Labels "org.opencontainers.image.version" }}' caddy:latest)
         echo "base_version=${base_version#v}" >> $GITHUB_ENV
+      shell: bash
 
     - name: Build and push
       uses: docker/build-push-action@v6
