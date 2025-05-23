@@ -7,8 +7,8 @@ If you wish to add one of these modules, it must be set at build time and compil
 This GitHub Action provides an easy way to build a Caddy container yourself with your own choice of modules which is then pushed to the Docker Hub.
 
 ## Usage
-Here are the required/avalible inputs:
-https://github.com/Zoobdude/caddy-docker-builder/blob/f4f45e62ad40f0998e187b7e26872005a7196d36/action.yaml#L5-L26
+Here are the required/available inputs:
+https://github.com/Zoobdude/caddy-docker-builder/blob/29e5e319dc340964241e670a5f81fdf9dbffd656/action.yaml#L8-L33
 
 Here is an example workflow file:
 ```
