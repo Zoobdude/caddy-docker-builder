@@ -20,8 +20,8 @@ inputs:
     description: "Password or personal access token used to log against the Docker registry"
     required: true
 
-  tags:
-    description: "List of tags"
+  image:
+    description: "Image to push"
     required: true
   
   platforms:
@@ -57,7 +57,7 @@ runs:
       uses: docker/build-push-action@v6
       with:
         push: true
-        tags: ${{ inputs.tags }}
+        tags: ${{ inputs.image }}
         context: .
         file: ${{ inputs.dockerfile || github.action_path + '/Dockerfile' }}
         build-args: |
